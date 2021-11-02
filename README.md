@@ -1,6 +1,8 @@
 #Rebase_Platforms_Projection_Tool
 An Html/JS web app that projects earnings for rebase platforms or high APY staking platforms like OHM TIME & KLIMA.
 
+https://www.youtube.com/watch?v=aD3cXB77MXM
+
 ![image](https://user-images.githubusercontent.com/5101197/139758270-95da1923-4cb9-49a9-9ca9-0ff90387c57b.png)
 
 **Form explanation**
