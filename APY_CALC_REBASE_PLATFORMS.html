@@ -176,6 +176,8 @@
 			  <button class="btn btn-secondary mb-2" id='ohmBTN' > OHM Price </button>
 
 			  <button class="btn btn-secondary mb-2"  id='timeBTN' > TIME Price </button>
+
+           <button class="btn btn-secondary mb-2"  id='klimaBTN' > KLIMA Price </button>
 			</div>
 		</div>
 		
@@ -239,6 +241,23 @@
         console.log( info);
     });
 	});
+
+   $('#klimaBTN').click(   function (event)
+  {
+  event.preventDefault();
+  fetch('https://api.coingecko.com/api/v3/coins/klima-dao?tickers=true&market_data=true&community_data=true&developer_data=true&sparkline=false')
+  .then((response) => {
+    return response.text();
+  })
+  .then((myContent) => {
+    var market = JSON.parse(myContent);
+    console.log( market);
+    var info = market["market_data"]["current_price"]["usd"];
+    document.getElementById("tokenName").value = "KLIMA";
+    document.getElementById("tokenPrice").value = info.toFixed(2);
+    console.log( info);
+  });
+  });
 	
 	$('#timeBTN').click(   function (event)
 	{
