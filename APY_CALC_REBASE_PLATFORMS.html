@@ -131,7 +131,6 @@
                   </div>
                </div>
 			   
-
                <div class="col-12" style="display:block;float:right;margin-left:1em">
                   <div class="tool-tip formcheck"  style="display:block;float:right">
                      <span class="tooltiptext">Give yourself a monthly allowance or paycheck.</span>
@@ -142,7 +141,6 @@
                      </div>
                   </div>
                </div>
-
                <div class="col-12"style="display:block;float:right;margin-left:1em">
                   <div style="display:block;float:right;>
                      <label for="allowanceStart">Allowance Month start:</label>
@@ -254,7 +252,7 @@
     console.log( market);
     var info = market["market_data"]["current_price"]["usd"];
     document.getElementById("tokenName").value = "KLIMA";
-    document.getElementById("tokenPrice").value = info.toFixed(2);
+    document.getElementById("tokenPrice").value = info.toFixed(4);
     console.log( info);
   });
   });
@@ -271,7 +269,7 @@
 		console.log( market);
 		var info = market["market_data"]["current_price"]["usd"];
 		document.getElementById("tokenName").value = "TIME";
-		document.getElementById("tokenPrice").value = info.toFixed(2);
+		document.getElementById("tokenPrice").value = info.toFixed(4);
 		console.log( info);
 	});
 	});
@@ -282,7 +280,7 @@
    var tokenPrice = Number(document.getElementById("tokenPrice").value);
    var usdAmount = Number(document.getElementById("usdAmount").value);
    
-   var math = Number(usdAmount / tokenPrice).toFixed(2);
+   var math = Number(usdAmount / tokenPrice).toFixed(4);
    
     document.getElementById("convertedVal").innerHTML = math;
 	document.getElementById("startingTokens").value = math;
