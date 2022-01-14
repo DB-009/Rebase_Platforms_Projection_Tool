@@ -30,3 +30,21 @@ https://www.youtube.com/watch?v=aD3cXB77MXM
 ![image](https://user-images.githubusercontent.com/5101197/139758792-c747b16e-e36d-4250-b192-052477f9fead.png)
 **Projection Preview**
 self explanatory number day, amount of token (red) , price in USD (green) 
+
+
+**Bond Tool Explanation**
+compares if bonding in and selling tokens is worth it or if bonding in and keeping tokens is worth it.
+![image](https://user-images.githubusercontent.com/5101197/149490870-6b859105-d9f0-4131-9ce4-97ab060e49b9.png)
+
+
+**1** =  tokens in possesion currently
+
+**2** = Current Price of token
+
+**3** = current reward yield 
+
+**4** = Bond discount percentage
+
+**5** = Amount of money youre bonding with
+
+**6** = Sell current tokens and throw that into equation
